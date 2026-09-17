@@ -196,7 +196,7 @@ local Library = { } do
     end
 
     Library.__index = Library
-    Library.Version = "1.1"
+    Library.Version = getgenv().eversion or '1.0'
     Library.WindowWidth = 716
     Library.WindowHeight = 540
 
