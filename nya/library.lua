@@ -120,9 +120,9 @@ local Library = { } do
     local IconPack
 
     pcall(function()
-        local Url = "https://raw.githubusercontent.com/Footagesus/Icons/main/Main-v2.lua"
+        local Url = "https://raw.githubusercontent.com/eueuem/Sahur/main/nya/icons/module.lua"
         IconPack = loadstring(game:HttpGetAsync(Url))()
-        IconPack.SetIconsType("lucide")
+        IconPack.SetIconsType("craft")
     end)
 
     local function ResolveIcon(Icon)
