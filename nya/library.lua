@@ -103,8 +103,8 @@ local Library = { } do
         end
 
         local MainOk, MainFont = pcall(function()
-            return CustomFont:New("Inter", 400, "normal", {
-                Url = "https://github.com/Da7mu/font/raw/refs/heads/main/Inter%20Medium%20500.ttf"
+            return CustomFont:New("Inter", 400, "semibold", {
+                Url = "https://github.com/eueuem/Sahur/raw/refs/heads/main/nya/assets/font/InterSemibold.ttf"
             })
         end)
 
