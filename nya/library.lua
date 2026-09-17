@@ -122,7 +122,7 @@ local Library = { } do
     pcall(function()
         local Url = "https://raw.githubusercontent.com/eueuem/Sahur/main/nya/icons/module.lua"
         IconPack = loadstring(game:HttpGetAsync(Url))()
-        IconPack.SetIconsType("craft")
+        IconPack.SetIconsType("lucide")
     end)
 
     local function ResolveIcon(Icon)
