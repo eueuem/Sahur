@@ -38,7 +38,7 @@ local function Loadstring(src)
 end
 
 local IconModule = {
-	IconsType = "craft",
+	IconsType = "lucide",
 
 	New = nil,
 	IconThemeTag = nil,
