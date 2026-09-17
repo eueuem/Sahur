@@ -1,5 +1,5 @@
-if getgenv().Zolar and getgenv().Zolar.Unload then
-    getgenv().Zolar:Unload()
+if getgenv().eurynome and getgenv().eurynome.Unload then
+    getgenv().eurynome:Unload()
 end
 
 local Library = { } do
@@ -26,9 +26,9 @@ local Library = { } do
         return cloneref(game:GetService("CoreGui"))
     end
 
-    Library.Directory = "Zolar"
-    Library.ConfigFolder = "Zolar/Configs"
-    Library.AssetsFolder = "Zolar/Assets"
+    Library.Directory = "eurynome"
+    Library.ConfigFolder = "eurynome/new/Configs"
+    Library.AssetsFolder = "eurynome/new/Assets"
 
     if isfolder then
         for _, Folder in { Library.Directory, Library.ConfigFolder, Library.AssetsFolder } do
@@ -877,7 +877,7 @@ local Library = { } do
             if Root then Root.Instance:Destroy() end
         end
 
-        getgenv().Zolar = nil
+        getgenv().eurynome = nil
     end
 
     Library.Holder = Library:Create("ScreenGui", {
@@ -2343,7 +2343,7 @@ local Library = { } do
         local MaxSubW = W - 120
 
         local Window = {
-            Name = Params.Name or "ZOLAR",
+            Name = Params.Name or "eurynome",
             Icon = Params.Icon or "layers",
             IsOpen = true,
             Tabs = { },
@@ -6433,7 +6433,7 @@ local Library = { } do
         end
     end)
 
-    getgenv().Zolar = Library
+    getgenv().eurynome = Library
 end
 
 return Library
