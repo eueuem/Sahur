@@ -38,7 +38,7 @@ local function Loadstring(src)
 end
 
 local IconModule = {
-	IconsType = "lucide",
+	IconsType = "craft",
 
 	New = nil,
 	IconThemeTag = nil,
@@ -53,15 +53,6 @@ local IconModule = {
 		craft = IsExploit() and Loadstring(
 			Get("https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/craft/dist/Icons.lua")
 		)() or require("./craft/dist/Icons"),
-		geist = IsExploit() and Loadstring(
-			Get("https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/geist/dist/Icons.lua")
-		)() or require("./geist/dist/Icons"),
-		sfsymbols = IsExploit() and Loadstring(
-			Get("https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/sfsymbols/dist/Icons.lua")
-		)() or require("./sfsymbols/dist/Icons"),
-		gravity = IsExploit() and Loadstring(
-			Get("https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/gravity/dist/Icons.lua")
-		)() or require("./gravity/dist/Icons"),
 	},
 }
 
